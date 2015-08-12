@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{87F12651-21F0-452C-BFA3-E1933F705C93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7C92995-6DF7-4DD4-842D-ABF781D7B122}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LolApp.Common", "src\LolApp.Common\LolApp.Common.xproj", "{86509F9A-569B-48C3-B127-9CACCAF98559}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LolApp.Common.Champion", "src\LolApp.Common.Champion\LolApp.Common.Champion.xproj", "{A54BF532-E6BB-4CE1-B90A-FD38DED0E53B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolApp.Common.RiotAPI", "LolApp.Common.RiotAPI\LolApp.Common.RiotAPI.csproj", "{F2E91C97-B721-4BE5-8E09-D3C5416ECFC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolApp.Common.RiotAPI.Tests", "LolApp.Common.RiotApi.Tests\LolApp.Common.RiotAPI.Tests.csproj", "{0133567D-3444-435C-96D9-2CB44D833E99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86509F9A-569B-48C3-B127-9CACCAF98559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86509F9A-569B-48C3-B127-9CACCAF98559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86509F9A-569B-48C3-B127-9CACCAF98559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86509F9A-569B-48C3-B127-9CACCAF98559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A54BF532-E6BB-4CE1-B90A-FD38DED0E53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54BF532-E6BB-4CE1-B90A-FD38DED0E53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54BF532-E6BB-4CE1-B90A-FD38DED0E53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54BF532-E6BB-4CE1-B90A-FD38DED0E53B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E91C97-B721-4BE5-8E09-D3C5416ECFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E91C97-B721-4BE5-8E09-D3C5416ECFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E91C97-B721-4BE5-8E09-D3C5416ECFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E91C97-B721-4BE5-8E09-D3C5416ECFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0133567D-3444-435C-96D9-2CB44D833E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0133567D-3444-435C-96D9-2CB44D833E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0133567D-3444-435C-96D9-2CB44D833E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0133567D-3444-435C-96D9-2CB44D833E99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86509F9A-569B-48C3-B127-9CACCAF98559} = {87F12651-21F0-452C-BFA3-E1933F705C93}
+		{A54BF532-E6BB-4CE1-B90A-FD38DED0E53B} = {87F12651-21F0-452C-BFA3-E1933F705C93}
+	EndGlobalSection
+EndGlobal
