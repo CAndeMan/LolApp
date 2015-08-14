@@ -1,0 +1,15 @@
+﻿@model LolApp.Models.ChampionDataModel
+
+@{
+    ViewBag.Title = "View1";
+}
+
+<div id="champion-info">
+    <h3>@Model.champ.name</h3>
+    <ul>
+        <li>Health: @Model.champ.stats.hp</li>
+        <li>AD: @Model.champ.stats.attackdamage</li>           
+    </ul>
+</div>
+
+
