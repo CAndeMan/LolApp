@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0133567D-3444-435C-96D9-2CB44D833E99}</ProjectGuid>
+    <ProjectGuid>{737C7B9A-AD44-46CD-8597-CBC21F047CAF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LolApp.Common.RiotApi.Tests</RootNamespace>
-    <AssemblyName>LolApp.Common.RiotApi.Tests</AssemblyName>
+    <RootNamespace>LolApp.Common.ChampionInfo.Tests</RootNamespace>
+    <AssemblyName>LolApp.Common.ChampionInfo.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -36,6 +36,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,7 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ApiTest.cs" />
+    <Compile Include="ChampionInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,14 +60,9 @@
       <Project>{8e0f751b-4a91-4592-9ef7-dab203fdaa7c}</Project>
       <Name>LolApp.Common.ChampionInfo</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LolApp.Common.RiotAPI\LolApp.Common.RiotAPI.csproj">
-      <Project>{f2e91c97-b721-4be5-8e09-d3c5416ecfc3}</Project>
-      <Name>LolApp.Common.RiotAPI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LolApp.Common\LolApp.Common.csproj">
-      <Project>{2871ccc9-0f46-467a-8dfd-b1515449a719}</Project>
-      <Name>LolApp.Common</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

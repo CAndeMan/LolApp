@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2E91C97-B721-4BE5-8E09-D3C5416ECFC3}</ProjectGuid>
+    <ProjectGuid>{2871CCC9-0F46-467A-8DFD-B1515449A719}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LolApp.Common.RiotAPI</RootNamespace>
-    <AssemblyName>LolApp.Common.RiotAPI</AssemblyName>
+    <RootNamespace>LolApp.Common</RootNamespace>
+    <AssemblyName>LolApp.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,20 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="APIBase.cs" />
-    <Compile Include="API\Champion.cs" />
-    <Compile Include="RequestBuilder.cs" />
+    <Compile Include="ILolDto.cs" />
+    <Compile Include="Regions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LolApp.Common.ChampionInfo\LolApp.Common.ChampionInfo.csproj">
-      <Project>{8e0f751b-4a91-4592-9ef7-dab203fdaa7c}</Project>
-      <Name>LolApp.Common.ChampionInfo</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LolApp.Common\LolApp.Common.csproj">
-      <Project>{2871ccc9-0f46-467a-8dfd-b1515449a719}</Project>
-      <Name>LolApp.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
