@@ -27,7 +27,7 @@ namespace LolApp.Common.RiotAPI.API
                     ret = ret + "/" + ChampionId.ToString();
                 if (FreeToPlay) Parameters.Add("freeToPlay=true");
                 Parameters.Add(RequestBuilder.API_KEY);
-                return string.Format(ret + "?" + string.Join("&", Parameters), Regions.All[Region ?? 0]);
+                return string.Format(ret + "?" + string.Join("&", Parameters), Regions.All[Region ?? 6]);
             }
         }
 
