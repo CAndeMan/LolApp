@@ -17,7 +17,7 @@ namespace LolApp.Controllers
             return View(new ChampionListModel());
         }
     
-        public ActionResult Champion(int? id)
+        public ActionResult ChampionInfo(int? id)
         {
             if (id == null) return Redirect("About");
 
