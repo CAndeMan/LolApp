@@ -36,10 +36,10 @@ namespace LolApp.Common.RiotAPI.API
             Parameters = new List<string>();
         }
 
-        public StaticData(int? region, int? entityId = null, string locale = null, string ver = null, string data = null) : this()
+        public StaticData(int? region, int? entityId = null, string locale = null, string ver = null, string data = null, bool dataById = true) : this()
         {
             Region = region ?? -1;
-            if (entityId != null) EntityId = entityId;
+            if (entityId != null) EntityId = entityId; else if (dataById) Parameters.Add("dataById="+dataById.ToString());
             if (locale != null) Parameters.Add("locale="+locale);
             if (ver != null) Parameters.Add("version=" + ver);
             if (data != null) Parameters.Add("champData=" + data);
@@ -48,7 +48,7 @@ namespace LolApp.Common.RiotAPI.API
 
         private string getUrlString(Type genType)
         {
-            if (genType == typeof(ChampionDto))
+            if (genType == typeof(ChampionDto) || genType == typeof(ChampionListDto))
             {
                 return "champion";
             }
@@ -61,18 +61,11 @@ namespace LolApp.Common.RiotAPI.API
             settings.Converters.Add(new RangeConverter());
 
             using (var reader = new StreamReader(stream))
-            { 
-                if (EntityId == null)
-                {
-                    return JsonConvert.DeserializeObject<List<T>>(reader.ReadToEnd(), settings);
-                }
-                else
-                {
-                    var result = new List<T>();
-                    result.Add(JsonConvert.DeserializeObject<T>(reader.ReadToEnd(), settings));
-                    return result;
-                }
-                
+            {
+                var result = new List<T>();
+                result.Add(JsonConvert.DeserializeObject<T>(reader.ReadToEnd(), settings));
+                return result;
+
             }
 
         }

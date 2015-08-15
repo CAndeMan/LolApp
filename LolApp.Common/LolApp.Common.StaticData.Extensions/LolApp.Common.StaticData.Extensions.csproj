@@ -30,15 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LolApp.Common">
-      <HintPath>..\..\LolApp\Dependencies\LolApp.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="LolApp.Common.RiotAPI">
-      <HintPath>..\..\LolApp\Dependencies\LolApp.Common.RiotAPI.dll</HintPath>
-    </Reference>
-    <Reference Include="LolApp.Common.StaticData">
-      <HintPath>..\..\LolApp\Dependencies\LolApp.Common.StaticData.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +43,20 @@
     <Compile Include="Champion\ChampionQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryExecutor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LolApp.Common.RiotAPI\LolApp.Common.RiotAPI.csproj">
+      <Project>{f2e91c97-b721-4be5-8e09-d3c5416ecfc3}</Project>
+      <Name>LolApp.Common.RiotAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LolApp.Common.StaticData\LolApp.Common.StaticData.csproj">
+      <Project>{eaf2e4ca-dd0d-4c30-8ad3-d837ac880074}</Project>
+      <Name>LolApp.Common.StaticData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LolApp.Common\LolApp.Common.csproj">
+      <Project>{2871ccc9-0f46-467a-8dfd-b1515449a719}</Project>
+      <Name>LolApp.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

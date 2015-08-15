@@ -19,8 +19,9 @@ namespace LolApp.Common.StaticData.Extensions
 
         public static List<ChampionDto> getChampionImages()
         {
-            var qry = new StaticData<ChampionDto>(DEFAULT_REGION, data: "image");
-            return RequestBuilder.ExecuteAndReturn(qry);
+            var qry = new StaticData<ChampionListDto>(DEFAULT_REGION, data: "image");
+            var result = RequestBuilder.ExecuteAndReturn(qry).First();
+            return result.data.Values.ToList();
         }
 
         public static ChampionDto getChampionAllById(int champId)

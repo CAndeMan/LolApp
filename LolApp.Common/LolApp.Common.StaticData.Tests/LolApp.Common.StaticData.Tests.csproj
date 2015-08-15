@@ -67,6 +67,10 @@
       <Project>{f2e91c97-b721-4be5-8e09-d3c5416ecfc3}</Project>
       <Name>LolApp.Common.RiotAPI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LolApp.Common.StaticData.Extensions\LolApp.Common.StaticData.Extensions.csproj">
+      <Project>{ec1c916a-d6ad-4bc6-b0a8-32859ceb5bf3}</Project>
+      <Name>LolApp.Common.StaticData.Extensions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LolApp.Common.StaticData\LolApp.Common.StaticData.csproj">
       <Project>{eaf2e4ca-dd0d-4c30-8ad3-d837ac880074}</Project>
       <Name>LolApp.Common.StaticData</Name>

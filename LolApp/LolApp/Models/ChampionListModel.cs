@@ -1,6 +1,8 @@
 ﻿using LolApp.Common.ChampionInfo;
 using LolApp.Common.RiotAPI;
 using LolApp.Common.RiotAPI.API;
+using LolApp.Common.StaticData.Champion;
+using LolApp.Common.StaticData.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +12,13 @@ namespace LolApp.Models
 {
     public class ChampionListModel
     {
-        public List<ChampionInfoDto> list;
+        public List<ChampionDto> list;
 
         public ChampionListModel()
         {
-            var qry = new Champion();
-            list = RequestBuilder.ExecuteAndReturn(qry);
+            list = QueryExecutor.getChampionImages()
+                .OrderBy(i => i.name)
+                .ToList();
         }
 
     }

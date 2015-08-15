@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
@@ -25,6 +26,16 @@ namespace LolApp.Common.StaticData.Champion
         public List<string> tags;
         public string title;
     }
+
+    public class ChampionListDto
+    {
+        public Dictionary<int, ChampionDto> data;
+        public string format;
+        public Dictionary<string, string> keys;
+        public string type;
+        public string version;
+    }
+
 
     public class SkinDto
     {
@@ -189,7 +200,6 @@ namespace LolApp.Common.StaticData.Champion
             throw new NotImplementedException();
         }
     }
-
 }
 
 

@@ -2,17 +2,27 @@
     ViewBag.Title = "Champions";
 }
 
-@Model LolApp.Models.ChampionListModel
-<h2>@ViewBag.Title.</h2>
+
 <h3>@ViewBag.Message</h3>
 
+<link href="@Url.Content("~/Content/champions.css")" rel="stylesheet" type="text/css" />
 
-@foreach (var item in Model.list)
-{
-    <div>
-        <h4><a href="Champion\ChampionInfo\@item.id">@item.id</a></h4>
-        <p>@item.freeToPlay</p>
-    </div>
-}
-
-<p>Use this area to provide additional information.</p>
+<ul class="champion-list">
+    @foreach (var item in Model.list)
+    {
+        <li class="champion-box">
+            <div class="champion-portraits">
+                <span class="portrait-box">
+                    <a href="Champion\ChampionInfo\@item.id">
+                        <img class="champion-image" src="http://ddragon.leagueoflegends.com/cdn/5.15.1/img/champion/@item.image.full" />
+                    </a>
+                </span>
+                <div class="champion-name">
+                    <a class="champion-link" href="Champion\ChampionInfo\@item.id">
+                        @item.name
+                    </a>
+                </div>
+            </div>
+        </li>
+    }
+</ul>

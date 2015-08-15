@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using LolApp.Common.RiotAPI.API;
 using LolApp.Common.RiotAPI;
 using System.Collections.Generic;
+using LolApp.Common.StaticData.Extensions;
 
 namespace LolApp.Common.StaticData.Tests
 {
@@ -33,6 +34,8 @@ namespace LolApp.Common.StaticData.Tests
         public void ChampionApiTest()
         {
             var api = new StaticData<ChampionDto>(6, 4, null, null, "all");
+
+            var images = QueryExecutor.getChampionImages();
 
             try
             {
