@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ILolDto.cs" />
     <Compile Include="Regions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

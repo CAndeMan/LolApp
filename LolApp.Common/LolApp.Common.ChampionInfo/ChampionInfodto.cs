@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 namespace LolApp.Common.ChampionInfo
 {
     [DataContract]
-    public class ChampionInfoDto : ILolDto
+    public class ChampionInfoDto
     {
         [DataMember]
         public bool botMmEnabled;
