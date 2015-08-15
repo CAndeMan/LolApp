@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 
 namespace LolApp.Common.StaticData.Champion
 {
-    public class ChampionDto : IStaticData
+    public class ChampionDto
     {
         public List<string> allytips;
         public string blurb;
@@ -24,11 +24,6 @@ namespace LolApp.Common.StaticData.Champion
         public StatsDto stats;
         public List<string> tags;
         public string title;
-
-        public string GetType()
-        {
-            return "champion";
-        }
     }
 
     public class SkinDto

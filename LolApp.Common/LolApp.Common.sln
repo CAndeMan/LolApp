@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolApp.Common.StaticData", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolApp.Common.StaticData.Tests", "LolApp.Common.StaticData.Tests\LolApp.Common.StaticData.Tests.csproj", "{21B30C91-8F1D-4CD7-8510-F58A1FC36149}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolApp.Common.StaticData.Extensions", "LolApp.Common.StaticData.Extensions\LolApp.Common.StaticData.Extensions.csproj", "{EC1C916A-D6AD-4BC6-B0A8-32859CEB5BF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{21B30C91-8F1D-4CD7-8510-F58A1FC36149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21B30C91-8F1D-4CD7-8510-F58A1FC36149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21B30C91-8F1D-4CD7-8510-F58A1FC36149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1C916A-D6AD-4BC6-B0A8-32859CEB5BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1C916A-D6AD-4BC6-B0A8-32859CEB5BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1C916A-D6AD-4BC6-B0A8-32859CEB5BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1C916A-D6AD-4BC6-B0A8-32859CEB5BF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

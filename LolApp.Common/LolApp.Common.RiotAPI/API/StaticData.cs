@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace LolApp.Common.RiotAPI.API
 {
-    public class StaticData<T> : APIBase<T> where T : IStaticData
+    public class StaticData<T> : APIBase<T>
     {
 
         private static readonly string version = "v1.2";
